@@ -1,0 +1,29 @@
+.section-header{
+  padding: 2rem 9rem 0rem 9rem;
+  background-image:linear-gradient(rgba($color-pale-cyan,0.5),rgba($color-pale-cyan,0.5)),url(/images/bg-hero-desktop.svg);
+  background-size: cover;
+
+  @include respond(tab-port){
+    padding: 2rem 7rem 0 7rem;
+  }
+  //background-image: linear-gradient($color-pale-cyan,$color-pale-cyan);
+}
+.section-features{
+  padding: 12rem 9rem 12rem 9rem;
+  position: relative;
+
+  @include respond(tab-land){
+    padding: 10rem 9rem 12rem 9rem;
+  }
+  @include respond(tab-port){
+    padding: 7rem 7rem 10rem 7rem;
+  }
+  @include respond(big-desktop){
+    padding: 10rem 9rem 12rem 9rem;
+  }
+  //@include respond(phone)
+}
+.footer{
+  padding: 18rem 9rem 9rem 9rem;
+  background-color: $color-dark-cyan;
+}

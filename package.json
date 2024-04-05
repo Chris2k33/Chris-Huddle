@@ -1,0 +1,23 @@
+{
+  "name": "Chris Huddle",
+  "version": "1.0",
+  "description": "Landing page for Huddle",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css -w"
+  },
+
+  "author": "Chris",
+  "license": "ISC",
+  "dependencies": {
+    "concat": "^1.0.3",
+    "sass": "^1.71.1"
+  }
+}
+
+{
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}

@@ -1,0 +1,90 @@
+.footer__logo-box{
+  margin-bottom: 4rem;
+}
+.footer__logo{
+  filter: brightness(50);
+  opacity: 1;
+  
+  @include respond(tab-port){
+    max-width: 50%;
+  }
+
+  @include respond(phone){
+    max-width: 30%;
+  }
+}
+
+.footerr{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: start;
+  font-size: 1.4rem;
+  color: $color-white;
+
+  @include respond(phone){
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__location{
+    text-align: left;
+  }
+  &__icon{
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+  &__box{
+    padding-right: 7rem;
+
+   @include respond(phone){
+    margin-bottom: 2rem;}
+  }
+  &__flex{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  &__contact{
+    color: $color-white;
+    text-decoration: none;
+  }
+  &__ul{
+    list-style: none;
+  }
+  &__link{
+    margin-bottom: 2rem;
+  }
+  &__socials{
+   @include respond(phone){
+    text-align: center;
+    margin-top: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+   }
+  }
+  &__socials-list{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 20rem;
+
+    @include respond(phone){
+     margin-bottom: 4rem;
+     justify-content: center;
+    }
+   
+  }
+  &__socials-icon{
+    color: $color-white;
+  }
+  &__copyright{
+    color: $color-white;
+    font-size: 1rem;
+  }
+}
+.ionicons{
+  height: 2.2rem;
+  width: 2.2rem;
+  padding: .7rem;
+  border: 1px solid;
+  border-radius: 50%;
+}

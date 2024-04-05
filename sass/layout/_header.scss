@@ -1,0 +1,83 @@
+.header{
+  height: 100vh;
+
+  //@include respond(tab-port){
+   // height: 86vh;
+  //}
+  &__nav-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0 4rem 0;
+
+    @include respond(tab-port){
+      margin-top: 1.5rem;
+    }
+  }
+  &__logo{
+    width: 70%;
+ 
+    @include respond(tab-port){
+      width: 60%;
+    }
+    @include respond(phone){
+      width: 40%;
+    }
+  }
+  &__text-box{
+    text-align: left;
+
+    @include respond(phone){
+      text-align: center;
+    }
+  }
+
+  &__page-layout{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 6rem; 
+    align-items: center;
+
+    @include respond(tab-land){
+      margin-top: 1.7rem;
+      gap: 4.5rem;
+    }
+    @include respond(tab-port){
+      gap: 6rem;
+      margin-top: 3rem;
+    }
+    @include respond(phone){
+     display: flex;
+     flex-direction: column;
+    }
+    @include respond(big-desktop){
+      gap: 4rem;
+    }
+  }
+  &__img-box{
+    display: flex;
+    justify-content: right;
+
+    @include respond(phone){
+     display: flex;
+     justify-content: center;
+    }
+  }
+  &__img{
+    max-width: 100%;
+
+    @include respond(tab-land){
+     max-width: 85%;
+    }
+    @include respond(tab-port){
+      max-width: 100%;
+    }
+    @include respond(phone){
+      max-width: 70%;
+    }
+    @include respond(big-desktop){
+     max-width: 60%;
+    }
+  }
+}

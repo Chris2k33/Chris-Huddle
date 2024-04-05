@@ -1,0 +1,96 @@
+.feature-layout{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 3rem 3rem;
+  border-radius: 15px;
+  border: 1px solid $color-grey-light-3;
+  // box-shadow: .5rem .5rem .5rem rgba($color-black, .1);
+  margin-bottom: 4rem;
+  
+  @include respond(tab-port){
+    gap: 1rem;
+  }
+  @include respond(phone){
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+.features-img{
+ max-width: 80%;
+ 
+ @include respond(phone){
+  max-width: 45%;
+ }
+}
+.features-img-box{
+  display: flex;
+  justify-content: right;
+  
+  @include respond(phone){
+    display: flex;
+    justify-content: center;
+  }
+}
+.features-text-box{
+  max-width: 70%;
+  // display: flex;
+  // flex-direction: column;
+  margin: 0 auto;
+  
+  @include respond(phone){
+    margin: 0 0;
+  }
+}
+
+.cta-button{
+  padding: 1rem 7rem;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 28px;
+  box-shadow: 0 .5rem .5rem (rgba(0, 0, 0, .1));
+  display: inline-block;
+  color: $color-white;
+  background-color: $color-pink;
+  margin-top: 3rem;
+  text-align: center;
+  
+  @include respond(tab-land){
+    padding: 1rem 5rem;
+    font-size: 1.7rem;
+    margin-top: 2.2rem;
+  }
+  @include respond(tab-port){
+    padding: 1rem 4rem;
+    font-size: 1.4rem;
+    margin-top: 2.2rem;
+  }
+}
+.feature-cta{
+  max-width: 70rem;
+  padding: 4rem 9rem;
+  border-radius: 15px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid $color-grey-light-3;
+  z-index: 9999;
+  background-color: $color-white;
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%);
+
+  @include respond(tab-land){
+    padding: 3rem 8.5rem;
+  }
+  @include respond(phone){
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
