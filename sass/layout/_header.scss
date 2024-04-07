@@ -68,13 +68,13 @@
     max-width: 100%;
 
     @include respond(tab-land) {
-      max-width: 85%;
+      max-width: 83%;
     }
     @include respond(tab-port) {
       max-width: 85%;
     }
     @include respond(phone) {
-      max-width: 70%;
+      max-width: 60%;
     }
     @include respond(big-desktop) {
       max-width: 60%;
